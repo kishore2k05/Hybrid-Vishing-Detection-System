@@ -1,4 +1,3 @@
-
 use std::env;
 use std::fs;
 
@@ -6,13 +5,25 @@ fn main() {
     println!("Text Cleaner Started");
     
     let args: Vec<String> = env::args().collect();
+    
+    let folder_type = if args.len() > 2 {
+        &args[2]
+    } else {
+        "raw"
+    };
+    
     let filename = if args.len() > 1 {
         args[1].clone()
     } else {
         String::from("normal_01")
     };
     
-    let input_path = format!("../datasets/raw_transcripts/{}.txt", filename);
+    let input_folder = match folder_type {
+        "translated" => "../datasets/translated_transcripts",
+        _ => "../datasets/raw_transcripts"
+    };
+    
+    let input_path = format!("{}/{}.txt", input_folder, filename);
     let output_path = format!("../datasets/cleaned_transcripts/{}.txt", filename);
     
     let _ = fs::create_dir_all("../datasets/cleaned_transcripts");
