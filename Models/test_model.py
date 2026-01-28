@@ -1,4 +1,4 @@
-import joblib
+import joblib #type: ignore
 import os
 
 MODEL_PATH = 'vishing_model.pkl'

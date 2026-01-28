@@ -1,11 +1,8 @@
-import google.generativeai as genai #type: ignore
+from google import genai #type: ignore
 import time
 import os
 
 GEMINI_KEYS = [
-    "AIzaSyChsa-K3WWeaudmi4uINBAhBRfycnpzHRI",
-    "AIzaSyChsa-K3WWeaudmi4uINBAhBRfycnpzHRI",
-    "AIzaSyChsa-K3WWeaudmi4uINBAhBRfycnpzHRI"
 ]
 
 MODEL_NAME = "gemini-2.0-flash" 

@@ -6,7 +6,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
 
-DATASET_PATH = '../datasets/Hybrid_Balanced_Grammar_Dataset_846.csv'
+DATASET_PATH = '../datasets/Complete_Large_Dataset.csv'
 MODEL_FILE = 'vishing_model.pkl'
 VECTORIZER_FILE = 'tfidf_vectorizer.pkl'
 
