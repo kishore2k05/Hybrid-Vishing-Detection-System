@@ -3,9 +3,9 @@ import time
 import os
 
 GEMINI_KEYS = [
-    "AIzaSyAW6jnGpDbBvgmsBspFDypB4w9sWfLoZwY",
-    "AIzaSyDRnpzrceoY7WWW_Imoiry3ZPbArx-oW3Y",
-    "AIzaSyDPbhkC0CkgWMm1isdDUL0DgMDz8QI-9G4"
+    "AIzaSyChsa-K3WWeaudmi4uINBAhBRfycnpzHRI",
+    "AIzaSyChsa-K3WWeaudmi4uINBAhBRfycnpzHRI",
+    "AIzaSyChsa-K3WWeaudmi4uINBAhBRfycnpzHRI"
 ]
 
 MODEL_NAME = "gemini-2.0-flash" 
